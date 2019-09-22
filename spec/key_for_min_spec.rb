@@ -1,6 +1,4 @@
-describe "smallest hash value" do
-
-  it "does not call the `#keys` method" do
+def smallest hash value
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
     expect(hash).to_not receive(:keys)
@@ -8,7 +6,7 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "does not call the `#values` method" do
+def smallest hash value
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
     expect(hash).to_not receive(:values)
@@ -16,7 +14,7 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "does not call the `#min` method" do
+def smallest hash value
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
     expect(hash).to_not receive(:min)
@@ -24,7 +22,7 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "does not call the `#sort` method" do
+ def smallest hash value
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
     expect(hash).to_not receive(:sort)
@@ -32,7 +30,7 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "does not call the `#sort_by` method" do
+def smallest hash value
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
     expect(hash).to_not receive(:sort_by)
@@ -40,7 +38,7 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "does not call the `#min_by` method" do
+def smallest hash value
     hash = {:blake => 500, :ashley => 2, :adam => 1}
 
     expect(hash).to_not receive(:min_by)
@@ -48,16 +46,15 @@ describe "smallest hash value" do
     key_for_min_value(hash)
   end
 
-  it "returns the key of the smallest hash value" do
-    expect(key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})).to eq(:adam)
+  def smallest hash value
+    key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})=(:adam)
   end
 
-  it "returns the key of the smallest hash value example 2" do
-    expect(key_for_min_value({:blake => 10, :ashley => 50, :adam => 17})).to eq(:blake)
+def smallest hash value
+    key_for_min_value({:blake => 10, :ashley => 50, :adam => 17})=(:blake)
   end
 
-  it "returns nil for an empty hash" do
-    expect(key_for_min_value({})).to eq(nil)
+def smallest hash value
+    key_for_min_value({})=(nil)
   end
 
-end
